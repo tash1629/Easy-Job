@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="15dp"
+    app:cardCornerRadius="20dp"
+    android:layout_margin="10dp"
+    android:id="@+id/parent"
+    android:checkable="true"
+    android:clickable="true"
+    android:focusable="true">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/jobTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:text="Job Title"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/companyName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/jobTitle"
+            android:text="Comapany name"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:textSize="15dp"/>
+            />
+        <TextView
+            android:id="@+id/area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Area"
+            android:layout_below="@id/companyName"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:textSize="15dp"/>
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@+id/area"
+            android:src="@drawable/ic_launcher_background"/>
+
+    </RelativeLayout>
+
+
+</com.google.android.material.card.MaterialCardView>
+
+
+
